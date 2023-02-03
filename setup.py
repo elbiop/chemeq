@@ -2,8 +2,8 @@
 
 from setuptools import setup
 
-PATH = 'C:\\Users\\User\\Desktop\\Python\\Projects\\Project-chemeq'
-with open(PATH + "\\chemeq\\README.md", "r") as file:
+PATH = 'C:\\Users\\Omar\\Documents\\Python\\chemeq'
+with open(PATH + "\\README.txt", "r") as file:
     description_long = file.read()
 
 setup(

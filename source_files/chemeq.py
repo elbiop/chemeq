@@ -18,8 +18,8 @@ Python 3.10.6
 '''Source for the periodic table of elements:
 IUPAC - International Union of Pure and Aplied Chemistry
 https://iupac.org/what-we-do/periodic-table-of-elements/'''
-path1 = "C:\\Users\\User\\Desktop\\Python\\Projects\\Project-chemeq\\"
-path2 = "chemeq\\periodic_table.csv"
+path1 = "C:\\Users\\Omar\\Documents\\Python\\chemeq\\"
+path2 = "source_files\\periodic_table.csv"
 path = path1 + path2
 periodic_table = pd.read_csv(path)
 periodic_table.set_index('Z', inplace=True)
