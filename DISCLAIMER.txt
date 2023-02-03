@@ -1,0 +1,8 @@
+The information and functionality provided in this package is intended for educational
+and practice purposes ONLY. All functionalities and data is provided in good faith.
+However I make no affirmation that the data provided nor the functionality of this package
+is under Warranty of any kind, explicitly or implied, regarding its accuracy, completeness,
+stability or reliability. UNDER NO CIRCUNSTANCE SHALL I HAVE ANY LIABILITY TO YOU OR OTHERS
+FOR LOSS OR DAMAGES OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE PACKAGE OR DATA PROVIDED
+OR OBTAINED TROUGH ITS USE. YOUR USE OF THE PACKAGE OR THE DATA PROVIDED BY IT OR ANY CONCLUSIONS
+YOU MIGHT DERIVE FROM IT IS AT YOUR OWN RISK AND YOUR SOLELY RESPOSIBILITY. 
