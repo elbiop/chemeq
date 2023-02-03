@@ -1,19 +1,19 @@
 ﻿<H3>chemeq DESCRIPTION</H3>
 <p> 
-<a>  Package capable of balance chemical equations and contains</a><br>
-<a>  most used portion of the periodic table of elements.</a><br>
+&nbsp;&nbsp;Package capable of balance chemical equations and contains<br>
+&nbsp;&nbsp;most used portion of the periodic table of elements.<br>
 <br>
-<a>  the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a><br>
+&nbsp;&nbsp;the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a><br>
 <br>
-<a><b>  1. equation</b></a><br>
-<a>     ========</a><br>
-      CLASS that receives as input a chemical equation in the form
-      of a string of the shape:
-      "reactant_1 + ... + reactant_n  = product_1 + ... + product_n"
-
-      properties
-      ----------
-          is_balanced
+&nbsp;&nbsp;<b>1. equation</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;========<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASS that receives as input a chemical equation in the form<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a string of the shape:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;properties<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----------<br>
+          is_balanced<br>
                Boolean (True or False)
           reactants
                pandas.DtataFrame where each row represents one
