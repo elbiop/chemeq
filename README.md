@@ -6,26 +6,26 @@
 &nbsp;&nbsp;the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a><br>
 <br>
 &nbsp;&nbsp;<b>1. equation</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;========<br>
+&nbsp;&nbsp;========<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASS that receives as input a chemical equation in the form<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a string of the shape:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;properties<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----------<br>
-          is_balanced<br>
-               Boolean (True or False)
-          reactants
-               pandas.DtataFrame where each row represents one
-	       of the reactant compounds, Their elements and
-               molecular weight.
-          products
-               pandas.DtataFrame where each row represents one
-	       of the product compounds. Their elements and
-               molecular weight.
-      Method
-      ------
-          balance()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is_balanced<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boolean (True or False)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reactants
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pandas.DtataFrame where each row represents one
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the reactant compounds, Their elements and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;molecular weight.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;products
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pandas.DtataFrame where each row represents one
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the product compounds. Their elements and
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;molecular weight.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balance()
                Balances the equation if it is unbalanced.
 
 <b>  2. periodic_table</b>
