@@ -1,4 +1,4 @@
-<H3>chemeq DESCRIPTION</H3>
+﻿<H3>chemeq DESCRIPTION</H3>
 <p> 
   Package capable of balance chemical equations and contains
   most used portion of the periodic table of elements.
@@ -53,14 +53,14 @@
   The balance status of the equation is also visible in
   the equation object itself.
 <pre>  >>> eq
-  <Unbalanced equation: "C2H5(OH) + O2 = CO2 + H2O"></pre>
+  &#60;Unbalanced equation: "C2H5(OH) + O2 = CO2 + H2O"&#62;</pre>
 
   To balance the equation invoque the balance() method
 <pre>  >>> eq.balance()
   >>> eq.is_balanced
   True
   >>> eq
-  <Balanced equation: "C2H5(OH) + 3O2 = 2CO2 + 3H2O">
+  &#60;Balanced equation: "C2H5(OH) + 3O2 = 2CO2 + 3H2O"&#62;
   >>> str(eq)
   "C2H5(OH) + 3O2 = 2CO2 + 3H2O"
   >>> eq.reactants
@@ -83,7 +83,7 @@
   False
   >>> eq.balance()
   >>> eq
-  <Balanced equation: "CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O">
+  &#60;Balanced equation: "CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O"&#62;
 
   >>> from chemeq import periodic_table
   >>> periodic_table
