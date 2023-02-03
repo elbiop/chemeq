@@ -43,13 +43,14 @@
   2. Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O
      must be represented with subindexes like Cu(SO4)(H2O)5.
 </p>
+<p>
 <H3>EXAMPLES</H3>
-<pre>
+```
   >>> from chemeq import equation
   >>> eq = equation("C2H5(OH) + O2 = CO2 + H2O")
   >>> eq.is_balanced
   False
-</pre>
+```</p>
   The balance status of the equation is also visible in
   the equation object itself.
 <pre>  >>> eq
