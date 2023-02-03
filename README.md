@@ -1,12 +1,12 @@
 ﻿<H3>chemeq DESCRIPTION</H3>
 <p> 
-  Package capable of balance chemical equations and contains
-  most used portion of the periodic table of elements.
-
-  the package has two objects: <equation> and <periodic_table>.
-
-<b>  1. equation</b>
-     ========
+<a>  Package capable of balance chemical equations and contains</a><br>
+<a>  most used portion of the periodic table of elements.</a><br>
+<br>
+<a>  the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a><br>
+<br>
+<a><b>  1. equation</b></a><br>
+<a>     ========</a><br>
       CLASS that receives as input a chemical equation in the form
       of a string of the shape:
       "reactant_1 + ... + reactant_n  = product_1 + ... + product_n"
