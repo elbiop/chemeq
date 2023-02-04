@@ -16,9 +16,12 @@
 &emsp;&emsp;&emsp;      is_balanced<br>
 &emsp;&emsp;&emsp;&emsp;     Boolean (True or False)<br>
 &emsp;&emsp;&emsp;      reactants<br>
-&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;     of the reactant compounds, Their elements and<br>
-&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
+&emsp;&emsp;&emsp;&emsp;
+<p>
+     pandas.DtataFrame where each row represents one
+     of the reactant compounds, Their elements and
+     molecular weight.
+</p>
 &emsp;&emsp;&emsp;      products<br>
 &emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
 &emsp;&emsp;&emsp;&emsp;     of the product compounds. Their elements and<br>
