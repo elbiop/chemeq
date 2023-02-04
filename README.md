@@ -5,28 +5,28 @@
 <br>
 &nbsp;&nbsp;the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a><br>
 <br>
-&nbsp;&nbsp;<b>1. equation</b><br>
-&nbsp;&nbsp;========<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASS that receives as input a chemical equation in the form<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a string of the shape:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
+&ensp;<b>1. equation</b><br>
+&ensp;========<br>
+&emsp;&ensp;CLASS that receives as input a chemical equation in the form<br>
+&emsp;&ensp;of a string of the shape:<br>
+&emsp;&ensp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
 <br>
-&ensp;&ensp;properties<br>
-&emsp;&emsp;----------<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is_balanced<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boolean (True or False)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reactants<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pandas.DtataFrame where each row represents one<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the reactant compounds, Their elements and<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;molecular weight.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;products<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pandas.DtataFrame where each row represents one<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of the product compounds. Their elements and<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;molecular weight.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balance()<br>
-               Balances the equation if it is unbalanced.
+&ensp;&ensp;      properties<br>
+&emsp;&emsp;      ----------<br>
+&emsp;&emsp;&emsp;      is_balanced<br>
+&emsp;&emsp;&emsp;&emsp;     Boolean (True or False)<br>
+&emsp;&emsp;&emsp;      reactants<br>
+&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
+&emsp;&emsp;&emsp;&emsp;     of the reactant compounds, Their elements and<br>
+&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
+&emsp;&emsp;&emsp;      products<br>
+&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
+&emsp;&emsp;&emsp;&emsp;     of the product compounds. Their elements and<br>
+&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
+&ensp;&ensp;      Method<br>
+&ensp;&ensp;      ------<br>
+&emsp;&emsp;&emsp;      balance()<br>
+&emsp;&emsp;&emsp;&emsp;     Balances the equation if it is unbalanced.<br>>
 
 <text><b>  2. periodic_table</b></text>
 <font>     ==============</font>
