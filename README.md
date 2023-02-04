@@ -8,15 +8,15 @@ the package has two objects: <b>equation</b> and <b>periodic_table</b><br>
 &emsp;CLASS that receives as input a chemical equation in the form<br>
 &emsp;of a string of the shape:<br>
 &emsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
-&emsp;The equation CLASS has three properties and one method.
+&emsp;The equation CLASS has three properties and one method.<br>
 &emsp;&emsp;&emsp;      <b>is_balanced</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. Boolean (True or False)<br>
 &emsp;&emsp;&emsp;      <b>reactants</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one of the <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     the product compounds, molecular weights and elements.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     of the product compounds, molecular weights and elements.<br>
 &emsp;&emsp;&emsp;      <b>products</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one of the <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     the product compounds, molecular weights and elements.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     of the product compounds, molecular weights and elements.<br>
 &emsp;&emsp;&emsp;      <b>balance()</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Method. Balances the equation if it is unbalanced.<br>
 
