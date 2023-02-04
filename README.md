@@ -10,20 +10,17 @@ the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a>
 &emsp;CLASS that receives as input a chemical equation in the form<br>
 &emsp;of a string of the shape:<br>
 &emsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
-&ensp;      properties:<br>
+&emsp;The equation CLASS has three properties and one method.
 &emsp;&emsp;&emsp;      <b>is_balanced</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Boolean (True or False)<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. Boolean (True or False)<br>
 &emsp;&emsp;&emsp;      <b>reactants</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     of the reactant compounds, Their elements and<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one of the <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     the product compounds, molecular weights and elements.<br>
 &emsp;&emsp;&emsp;      <b>products</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     of the product compounds. Their elements and<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
-&ensp;&ensp;      Method:<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one of the <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     the product compounds, molecular weights and elements.<br>
 &emsp;&emsp;&emsp;      <b>balance()</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Balances the equation if it is unbalanced.<br>>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Method. Balances the equation if it is unbalanced.<br>>
 
 <b> 2. periodic_table</b><br>
 &emsp;     pandas.DataFrame with data from the periodic table of elements<br>
@@ -34,10 +31,11 @@ the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a>
 &emsp;     https://iupac.org/what-we-do/periodic-table-of-elements/<br>
 </p>
 <H3>LIMITATIONS</H3>
-<p>
-  1. Does not include Rare earths, synthetic elements, Rn, Fr & Ra.
-  2. Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O
-     must be represented with subindexes like Cu(SO4)(H2O)5.
+<p><ol>
+<li>Does not include Rare earths, synthetic elements, Rn, Fr & Ra.<li>
+<li> Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O
+must be represented with subindexes like Cu(SO4)(H2O)5.</li>
+</ol>
 </p>
 <p>
 <H3>EXAMPLES</H3>
