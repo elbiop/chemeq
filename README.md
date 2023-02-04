@@ -11,8 +11,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of a string of the shape:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
 <br>
-&enbs;&emsp;properties<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----------<br>
+&ensp;&ensp;properties<br>
+&emsp;&emsp;----------<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is_balanced<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boolean (True or False)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reactants<br>
