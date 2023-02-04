@@ -12,19 +12,19 @@
 &emsp;&ensp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
 <br>
 &ensp;&ensp;      properties<br>
-&emsp;&emsp;      ----------<br>
+&emsp;&ensp;      ------------<br>
 &emsp;&emsp;&emsp;      <b>is_balanced</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Boolean (True or False)<br>
 &emsp;&emsp;&emsp;      <b>reactants</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one
-&emsp;&emsp;&emsp;&emsp;&emsp;     of the reactant compounds, Their elements and
-&emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.
+&emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     of the reactant compounds, Their elements and<b>
+&emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
 &emsp;&emsp;&emsp;      <b>products</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     of the product compounds. Their elements and<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
 &ensp;&ensp;      Method<br>
-&ensp;&ensp;      ------<br>
+&ensp;&ensp;      ----------<br>
 &emsp;&emsp;&emsp;      <b>balance()</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Balances the equation if it is unbalanced.<br>>
 
