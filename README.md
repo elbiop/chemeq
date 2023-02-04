@@ -1,41 +1,37 @@
 ﻿<H3>chemeq DESCRIPTION</H3>
 <p> 
-&nbsp;&nbsp;Package capable of balance chemical equations and contains<br>
-&nbsp;&nbsp;most used portion of the periodic table of elements.<br>
+Package capable of balance chemical equations and contains<br>
+most used portion of the periodic table of elements.<br>
 <br>
-&nbsp;&nbsp;the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a><br>
+the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a><br>
 <br>
-&ensp;<b>1. equation</b><br>
-&ensp;========<br>
-&emsp;&ensp;CLASS that receives as input a chemical equation in the form<br>
-&emsp;&ensp;of a string of the shape:<br>
-&emsp;&ensp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
-<br>
-&ensp;&ensp;      properties<br>
-&emsp;&ensp;      ------------<br>
+<b>1. equation</b><br>
+========<br>
+&emsp;CLASS that receives as input a chemical equation in the form<br>
+&emsp;of a string of the shape:<br>
+&emsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
+&ensp;      properties:<br>
 &emsp;&emsp;&emsp;      <b>is_balanced</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Boolean (True or False)<br>
 &emsp;&emsp;&emsp;      <b>reactants</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     of the reactant compounds, Their elements and<b>
+&emsp;&emsp;&emsp;&emsp;&emsp;     of the reactant compounds, Their elements and<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
 &emsp;&emsp;&emsp;      <b>products</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     of the product compounds. Their elements and<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
-&ensp;&ensp;      Method<br>
-&ensp;&ensp;      ----------<br>
+&ensp;&ensp;      Method:<br>
 &emsp;&emsp;&emsp;      <b>balance()</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Balances the equation if it is unbalanced.<br>>
 
-<text><b>  2. periodic_table</b></text>
-<font>     ==============</font>
-<text>      pandas.DataFrame with data from the periodic table of elements
-      contains: Z, name, symbol, atomic mass, atomic mass error, period,
-      group & state.</text>
-<font>      Source for the periodic table of elements:
-	IUPAC - International Union of Pure and Applied Chemistry
-	https://iupac.org/what-we-do/periodic-table-of-elements/</font>
+<b> 2. periodic_table</b><br>
+&emsp;     pandas.DataFrame with data from the periodic table of elements<br>
+&emsp;     contains: Z, name, symbol, atomic mass, atomic mass error, period,<br>
+&emsp;     group & state.<br>
+&emsp;     Source for the periodic table of elements:<br>
+&emsp;     IUPAC - International Union of Pure and Applied Chemistry<br>
+&emsp;     https://iupac.org/what-we-do/periodic-table-of-elements/<br>
 </p>
 <H3>LIMITATIONS</H3>
 <p>
