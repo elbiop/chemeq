@@ -13,22 +13,20 @@
 <br>
 &ensp;&ensp;      properties<br>
 &emsp;&emsp;      ----------<br>
-&emsp;&emsp;&emsp;      is_balanced<br>
-&emsp;&emsp;&emsp;&emsp;     Boolean (True or False)<br>
-&emsp;&emsp;&emsp;      reactants<br>
-<p>
-&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one
-     of the reactant compounds, Their elements and
-     molecular weight.
-</p>
-&emsp;&emsp;&emsp;      products<br>
-&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;     of the product compounds. Their elements and<br>
-&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
+&emsp;&emsp;&emsp;      <b>is_balanced</b><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Boolean (True or False)<br>
+&emsp;&emsp;&emsp;      <b>reactants</b><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one
+&emsp;&emsp;&emsp;&emsp;&emsp;     of the reactant compounds, Their elements and
+&emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.
+&emsp;&emsp;&emsp;      <b>products</b><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     pandas.DtataFrame where each row represents one<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     of the product compounds. Their elements and<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     molecular weight.<br>
 &ensp;&ensp;      Method<br>
 &ensp;&ensp;      ------<br>
-&emsp;&emsp;&emsp;      balance()<br>
-&emsp;&emsp;&emsp;&emsp;     Balances the equation if it is unbalanced.<br>>
+&emsp;&emsp;&emsp;      <b>balance()</b><br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Balances the equation if it is unbalanced.<br>>
 
 <text><b>  2. periodic_table</b></text>
 <font>     ==============</font>
