@@ -2,7 +2,7 @@
 <p> 
 Package capable of balance chemical equations and contains<br>
 most used portion of the periodic table of elements.<br>
-the package has two objects: <b>equation</b> and <b>periodic_table</b><br>
+The package has two objects: <b>equation</b> and <b>periodic_table</b><br>
 <br>
 <b>1. equation</b><br>
 &emsp;CLASS that receives as input a chemical equation in the form<br>
@@ -45,7 +45,7 @@ must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
 <pre>  >>> eq
   &#60;Unbalanced equation: "C2H5(OH) + O2 = CO2 + H2O"&#62;</pre>
 
-  To balance the equation invoque the balance() method
+  To balance the equation invoke the balance() method
 <pre>  >>> eq.balance()
   >>> eq.is_balanced
   True

@@ -1,9 +1,9 @@
-chemeq DESCRIPTION
+﻿chemeq DESCRIPTION
  
   Package capable of balance chemical equations and contains
   most used portion of the periodic table of elements.
 
-  the package has two objects: <equation> and <periodic_table>.
+  The package has two objects: <equation> and <periodic_table>.
 
   1. equation
      ========
@@ -53,7 +53,7 @@ EXAMPLES
   >>> eq
   <Unbalanced equation: "C2H5(OH) + O2 = CO2 + H2O">
 
-  To balance the equation invoque the balance() method
+  To balance the equation invoke the balance() method
   >>> eq.balance()
   >>> eq.is_balanced
   True
