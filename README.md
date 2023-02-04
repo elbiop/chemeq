@@ -28,14 +28,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balance()<br>
                Balances the equation if it is unbalanced.
 
-<b>  2. periodic_table</b>
-     ==============
-      pandas.DataFrame with data from the periodic table of elements
+<text><b>  2. periodic_table</b></text>
+<font>     ==============</font>
+<text>      pandas.DataFrame with data from the periodic table of elements
       contains: Z, name, symbol, atomic mass, atomic mass error, period,
-      group & state.
-      Source for the periodic table of elements:
+      group & state.</text>
+<font>      Source for the periodic table of elements:
 	IUPAC - International Union of Pure and Applied Chemistry
-	https://iupac.org/what-we-do/periodic-table-of-elements/
+	https://iupac.org/what-we-do/periodic-table-of-elements/</font>
 </p>
 <H3>LIMITATIONS</H3>
 <p>
