@@ -2,11 +2,9 @@
 <p> 
 Package capable of balance chemical equations and contains<br>
 most used portion of the periodic table of elements.<br>
-<br>
-the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a><br>
+the package has two objects: <b>equation</b> and <b>periodic_table</b><br>
 <br>
 <b>1. equation</b><br>
-========<br>
 &emsp;CLASS that receives as input a chemical equation in the form<br>
 &emsp;of a string of the shape:<br>
 &emsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
@@ -20,7 +18,7 @@ the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one of the <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     the product compounds, molecular weights and elements.<br>
 &emsp;&emsp;&emsp;      <b>balance()</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Method. Balances the equation if it is unbalanced.<br>>
+&emsp;&emsp;&emsp;&emsp;&emsp;     Method. Balances the equation if it is unbalanced.<br>
 
 <b> 2. periodic_table</b><br>
 &emsp;     pandas.DataFrame with data from the periodic table of elements<br>
@@ -29,22 +27,19 @@ the package has two objects: &#60;equation&#62; and &#60;periodic_table&#62.</a>
 &emsp;     Source for the periodic table of elements:<br>
 &emsp;     IUPAC - International Union of Pure and Applied Chemistry<br>
 &emsp;     https://iupac.org/what-we-do/periodic-table-of-elements/<br>
-</p>
+
 <H3>LIMITATIONS</H3>
-<p><ol>
-<li>Does not include Rare earths, synthetic elements, Rn, Fr & Ra.<li>
-<li> Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O
-must be represented with subindexes like Cu(SO4)(H2O)5.</li>
-</ol>
-</p>
-<p>
+<ol><li>Does not include Rare earths, synthetic elements, Rn, Fr & Ra.</li>
+<li> Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O<br>
+must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
+
 <H3>EXAMPLES</H3>
-```
+<pre>
   >>> from chemeq import equation
   >>> eq = equation("C2H5(OH) + O2 = CO2 + H2O")
   >>> eq.is_balanced
   False
-```</p>
+</pre>
   The balance status of the equation is also visible in
   the equation object itself.
 <pre>  >>> eq
@@ -68,7 +63,7 @@ must be represented with subindexes like Cu(SO4)(H2O)5.</li>
   1            3     H2O  0  2  1       18.015</pre>
   
 
-  An equation can be created with their indexes to test
+  An equation can be created with their indexes to test<br>
   if it is balanced. If it is not it can be balanced later.
 <pre>  >>> eq = equation("CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O")
   >>> eq.is_balanced
