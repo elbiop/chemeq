@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-
 from setuptools import setup
+import os
 
-PATH = 'C:\\Users\\Omar\\Documents\\Python\\chemeq'
+PATH = os.getcwd()
 with open(PATH + "\\README.txt", "r") as file:
     description_long = file.read()
 
 setup(
       name='chemeq',
       version='0.1.1',
-      description='''library for balancing chemical equations and periodic table of elements''',
+      description='''Balance chemical equations, periodic table of elements''',
       author="Elbio Peña",
       author_email="elbioemilio@outlook.es",
       url="github.com/elbiop/chemeq",
@@ -17,8 +17,9 @@ setup(
       requires=["numpy", "pandas"],
       install_requires=["numpy", "pandas"],
       python_requires=">= 3.6",
-      keywords=["chemistry", "chemical", "equation", "balance",
-                "balancer", "balancing", "periodic table", "elements"],
+      keywords=["chemistry", "chemical", "chemicals", "equation",
+                "equations", "balance", "balancer", "balancing", "reaction",
+                "reactions" "periodic table", "elements"],
       classifiers=["Development status ::  8 - Implementation",
                    "Intended audienence :: Students, Developers",
                    "Operating System :: Windows",

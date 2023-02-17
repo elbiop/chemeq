@@ -1,7 +1,7 @@
 ﻿chemeq DESCRIPTION
  
-  Package capable of balance chemical equations and contains
-  most used portion of the periodic table of elements.
+  Package capable of balance chemical equations and contains most used portion
+  of the periodic table of elements.
 
   The package has two objects: <equation> and <periodic_table>.
 
@@ -16,13 +16,11 @@
           is_balanced
                Boolean (True or False)
           reactants
-               pandas.DtataFrame where each row represents one
-	       of the reactant compounds, Their elements and
-               molecular weight.
+               pandas.DtataFrame where each row represents one of the reactant
+               compounds, Their elements and molecular weights.
           products
-               pandas.DtataFrame where each row represents one
-	       of the product compounds. Their elements and
-               molecular weight.
+               pandas.DtataFrame where each row represents one of the product
+               compounds. Their elements and molecular weights.
       Method
       ------
           balance()
@@ -30,12 +28,12 @@
 
   2. periodic_table
      ==============
-      pandas.DataFrame with data from the periodic table of elements
-      contains: Z, name, symbol, atomic mass, atomic mass error, period,
-      group & state.
+      pandas.DataFrame with data from the periodic table of elements contains:
+      Z, name, symbol, atomic mass, atomic mass error, period,  group & state.
+      
       Source for the periodic table of elements:
-	IUPAC - International Union of Pure and Applied Chemistry
-	https://iupac.org/what-we-do/periodic-table-of-elements/
+	  IUPAC - International Union of Pure and Applied Chemistry
+	  https://iupac.org/what-we-do/periodic-table-of-elements/
 
 LIMITATIONS
   1. Does not include Rare earths, synthetic elements, Rn, Fr & Ra.
@@ -99,4 +97,3 @@ EXAMPLES
   82                  Lead     Pb       207.2000  1.1000     14       6     s
   83               Bismuth     Bi       208.9800  0.0100     15       6     s
   [67 rows x 7 columns]
-

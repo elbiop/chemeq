@@ -1,1 +1,1 @@
-from chemeq import periodic_table, equation
+from chemeq import periodic_table, chemeq
