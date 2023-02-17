@@ -35,8 +35,8 @@ must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
 
 <H3>EXAMPLES</H3>
 <pre>
-  >>> from chemeq import equation
-  >>> eq = equation("C2H5(OH) + O2 = CO2 + H2O")
+  >>> from chemeq import chemeq
+  >>> eq = chemeq("C2H5(OH) + O2 = CO2 + H2O")
   >>> eq.is_balanced
   False
 </pre>
@@ -65,10 +65,10 @@ must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
 
   An equation can be created with their indexes to test<br>
   if it is balanced. If it is not it can be balanced later.
-<pre>  >>> eq = equation("CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O")
+<pre>  >>> eq = chemeq("CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O")
   >>> eq.is_balanced
   True
-  >>> eq = equation("73CuS + 73HNO3 = 11CuSO4 + 11NO2 + 11H2O")
+  >>> eq = chemeq("73CuS + 73HNO3 = 11CuSO4 + 11NO2 + 11H2O")
   >>> eq.is_balanced
   False
   >>> eq.balance()
