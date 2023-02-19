@@ -1,5 +1,4 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
 tests/__pycache__/
 chemeq/__pycache__/
 *.pyc
