@@ -5,7 +5,9 @@ import os
 
 unbalanced_eq = open("unbalanced_equations.txt", 'r').read().split("\n")
 balanced_eq = open("balanced_equations.txt", 'r').read().split("\n")
-ABS_PATH = os.getcwd()[:-5] + "source_files"
+
+os.chdir("..")
+ABS_PATH = os.getcwd() + os.sep + "source_files"
 sys.path.insert(0, ABS_PATH)
 os.chdir(ABS_PATH)
 
@@ -25,12 +27,12 @@ def main():
             eq.balance()
             if str(eq) == balanced_eq[i]:
                 success += 1
-                original = f"::balanced Correctly::\nOriginal: {text}\n"
-                result = original + f"Result:   {str(eq)}\n"
+                header = "  :: balanced Correctly ::"
             else:
                 fails += 1
-                result = f"Failed!    <<<<<{eq}>>>>  <<<<{balanced_eq[i]}>>>"
-            print(result)
+                header = "\n\n!!!!!!!!!!!!!!   Failed   !!!!!!!!!!!!!!"
+            print(header + f'\nOriginal: {text}\nResult   {str(eq)}\n')
+            
         except Exception as error:
             print(f"Error: {error}")
     total = time.time()-initial

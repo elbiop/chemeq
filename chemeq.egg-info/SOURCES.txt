@@ -1,0 +1,11 @@
+LICENSE.txt
+README.txt
+pyproject.toml
+setup.py
+C:/Users/omar/Documents/Python/chemeq/chemeq.egg-info/PKG-INFO
+C:/Users/omar/Documents/Python/chemeq/chemeq.egg-info/SOURCES.txt
+C:/Users/omar/Documents/Python/chemeq/chemeq.egg-info/dependency_links.txt
+C:/Users/omar/Documents/Python/chemeq/chemeq.egg-info/requires.txt
+C:/Users/omar/Documents/Python/chemeq/chemeq.egg-info/top_level.txt
+tests/test_base_outputs.py
+tests/test_syntax.py

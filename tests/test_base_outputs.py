@@ -5,7 +5,8 @@ import pytest
 import sys
 import os
 
-ABS_PATH = os.getcwd()[:-5] + "source_files"
+os.chdir("..")
+ABS_PATH = os.getcwd() + os.sep + "source_files"
 sys.path.insert(0, ABS_PATH)
 os.chdir(ABS_PATH)
 

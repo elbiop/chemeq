@@ -4,12 +4,12 @@ import pandas as pd
 import sys
 import os
 
-ABS_PATH = os.getcwd() #[:-5] + "source_files"
+os.chdir("..")
+ABS_PATH = os.getcwd() + os.sep + "source_files"
 sys.path.insert(0, ABS_PATH)
 os.chdir(ABS_PATH)
 
 from syntax_review import syntax_review
-
 
 all_symbols = pd.read_csv("periodic_table.csv")['symbol'].values
 
