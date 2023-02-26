@@ -2,3 +2,32 @@
 [owner]
 name = "Elbio Peña"
 dob = 2023-02-17T11:07:00
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'chemeq',
+version = '0.1.1',
+description = '''Balance chemical equations, periodic table of elements''',
+readme = "README.txt"
+author = "Elbio Peña",
+author_email = "elbioemilio@outlook.es",
+py_modules = ["chemeq"],
+requires = ["numpy", "pandas"],
+install_requires = ["numpy", "pandas"],
+python_requires = ">= 3.6",
+keywords = ["chemistry", "chemical", "chemicals", "equation",
+            "equations", "balance", "balancer", "balancing", "reaction",
+            "reactions" "periodic table", "elements"],
+classifiers = ["DEVELOPMENT STATUS::5-PRODUCTION/STABLE",
+               "INTENDEN AUDIENCE::EDUCATION",
+               "PROGRAMMING LANGUAGE::PYTHON",
+               "INTENDED AUDIENCE::END USER/DESKTOP",
+               "INTENDED AUDIENCE::SCIENCE/RESEARCH"],
+package_dir = {'': "chemeq"}
+
+[project.urls]
+repository = "https://github.com/elbiop/chemeq"
+

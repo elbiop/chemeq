@@ -5,7 +5,7 @@ import sys
 import os
 
 os.chdir("..")
-ABS_PATH = os.getcwd() + os.sep + "source_files"
+ABS_PATH = os.getcwd() + os.sep + "source_code"
 sys.path.insert(0, ABS_PATH)
 os.chdir(ABS_PATH)
 

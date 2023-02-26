@@ -1,9 +1,11 @@
-# Byte-compiled / optimized / DLL files
+# cache directories
 tests/__pycache__/
 chemeq/__pycache__/
-*.pyc
-
-# cache files
 .pytest_cache/
 
+
+# build directory files 
 build/
+
+#compyled files
+*.pyc

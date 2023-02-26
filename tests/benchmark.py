@@ -7,13 +7,13 @@ unbalanced_eq = open("unbalanced_equations.txt", 'r').read().split("\n")
 balanced_eq = open("balanced_equations.txt", 'r').read().split("\n")
 
 os.chdir("..")
-ABS_PATH = os.getcwd() + os.sep + "source_files"
+ABS_PATH = os.getcwd() + os.sep + "source_code"
 sys.path.insert(0, ABS_PATH)
 os.chdir(ABS_PATH)
 
 from chemeq import chemeq
 
-os.chdir(ABS_PATH[:-12] + "tests")
+os.chdir(ABS_PATH[:-11] + "tests")
 
 
 def main():

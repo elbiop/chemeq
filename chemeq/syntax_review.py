@@ -63,6 +63,7 @@ def syntax_review(equation, all_symbols):
     if not isinstance(equation, str):
         text = "Equation must be a string not a "
         raise TypeError(text + f"{type(equation)}")
+
     # look for characters other than valid characters.
     wrong_symbols = list(re.findall(r"[^a-z0-9A-Z ()\+=]+",
                                     equation))
@@ -71,9 +72,10 @@ def syntax_review(equation, all_symbols):
         for symbol in wrong_symbols:
             text += '"' + symbol + '", '
         raise ValueError(text[:-2])
-    # If the group is empty there are two contigous "+" signs
+
     if len(list(re.findall("(=)", equation))) > 1:
         raise ValueError("Too many equal signs")
+
     try:
         left_hand_side, right_hand_side = equation.replace(
                                             " ", "").split("=")
@@ -82,14 +84,18 @@ def syntax_review(equation, all_symbols):
 
     if len(left_hand_side) == 0:
         raise ValueError(f'Reactants missing in:  "{equation}"')
+
     if len(right_hand_side) == 0:
         raise ValueError(f'Products missing in: "{equation}"')
 
     reac_formulas = left_hand_side.split("+")
     prod_formulas = right_hand_side.split("+")
+
+    #if there are empty compounds '', there are two contiguous (+) signs
     if ('' in reac_formulas) | ('' in prod_formulas):
         text = 'there are too many plus (+) signs'
         raise ValueError(text)
+
     for comp in (reac_formulas + prod_formulas):
         # verify no empty parentheses are found
         if len(re.findall(r"(\(\))+", comp)):
