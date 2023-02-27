@@ -5,7 +5,6 @@ chemeq/__pycache__/
 
 
 # build directory files 
-build/
 
 #compyled files
 *.pyc
