@@ -1,4 +1,4 @@
-<H3>chemeq DESCRIPTION</H3>
+<H3>PROJECT DESCRIPTION</H3>
 <p> 
 Package capable of balance chemical equations and contains<br>
 the most used portion of the periodic table of elements.<br>
@@ -12,10 +12,10 @@ The package has two objects: <b>equation</b> and <b>periodic_table</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. Boolean (True or False)<br>
 &emsp;&emsp;&emsp;      <b>reactants</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     of the product compounds, molecular weights and elements.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     of the reactants (left side) compounds, molecular weights and elements.<br>
 &emsp;&emsp;&emsp;      <b>products</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Propertie. pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     of the product compounds, molecular weights and elements.<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;     of the product (right side) compounds, molecular weights and elements.<br>
 &emsp;&emsp;&emsp;      <b>balance()</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Method. Balances the equation if it is unbalanced.<br>
 
