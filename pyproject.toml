@@ -17,11 +17,11 @@ requires-python = ">= 3.6"
 keywords = ["chemistry", "chemical", "chemicals", "equation",
             "equations", "balance", "balancer", "balancing", "reaction",
             "reactions", "periodic table", "elements"]
-classifiers = ["DEVELOPMENT STATUS::5-PRODUCTION/STABLE",
-               "INTENDEN AUDIENCE::EDUCATION",
-               "PROGRAMMING LANGUAGE::PYTHON",
-               "INTENDED AUDIENCE::END USER/DESKTOP",
-               "INTENDED AUDIENCE::SCIENCE/RESEARCH"]
+classifiers = ["Development Status :: 5 - Production/Stable",
+               "Programming Language :: Python :: 3",
+               "Operating System :: OS Independent",
+               "Intended Audience :: Education",
+               "Intended Audience :: End Users/Desktop"]
 
 [project.urls]
 repository = "https://github.com/elbiop/chemeq"

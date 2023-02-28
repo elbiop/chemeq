@@ -1,11 +1,11 @@
-﻿<H3>chemeq DESCRIPTION</H3>
+<H3>chemeq DESCRIPTION</H3>
 <p> 
 Package capable of balance chemical equations and contains<br>
-most used portion of the periodic table of elements.<br>
+the most used portion of the periodic table of elements.<br>
 The package has two objects: <b>equation</b> and <b>periodic_table</b><br>
 <br>
 <b>1. equation</b><br>
-&emsp;CLASS that receives as input a chemical equation in the form<br>
+&emsp;CLASS, Receives a string as input, representing a chemical equation in<br> &emsp;the shape:<br>
 &emsp;of a string of the shape:<br>
 &emsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
 &emsp;The equation CLASS has three properties and one method.<br>
@@ -30,7 +30,7 @@ The package has two objects: <b>equation</b> and <b>periodic_table</b><br>
 
 <H3>LIMITATIONS</H3>
 <ol><li>Does not include Rare earths, synthetic elements, Rn, Fr & Ra.</li>
-<li> Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O<br>
+<li> Intermediate prefixes like those from hydrates such as Cu(SO4)�5H2O<br>
 must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
 
 <H3>EXAMPLES</H3>

@@ -5,11 +5,11 @@ Summary: Balance chemical equations, periodic table of elements
 Author-email: Elbio Peña <elbioemilio@outlook.es>
 Project-URL: repository, https://github.com/elbiop/chemeq
 Keywords: chemistry,chemical,chemicals,equation,equations,balance,balancer,balancing,reaction,reactions,periodic table,elements
-Classifier: DEVELOPMENT STATUS::5-PRODUCTION/STABLE
-Classifier: INTENDEN AUDIENCE::EDUCATION
-Classifier: PROGRAMMING LANGUAGE::PYTHON
-Classifier: INTENDED AUDIENCE::END USER/DESKTOP
-Classifier: INTENDED AUDIENCE::SCIENCE/RESEARCH
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
 Requires-Python: >=3.6
 Description-Content-Type: text/plain
 License-File: LICENSE.txt
