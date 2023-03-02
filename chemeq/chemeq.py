@@ -28,7 +28,7 @@ class chemeq():
 
     LIMITATIONS
     1. Does not include Rare earths, synthetic elements, Rn, Fr & Ra.
-    2. Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O
+    2. Intermediate prefixes like those from hydrates such as Cu(SO4)·5H2O
          must be represented with subindexes like Cu(SO4)(H2O)5.
 
     EXAMPLES
@@ -196,7 +196,7 @@ class chemeq():
         -----------
         - Does not include Rare earths, synthetetic elements, Rn, Fr & Ra.
         - Hidrates representations must have coefficient like Cu(SO4)(H2O)5
-          instead of prefixes like Cu(SO4)•5H2O
+          instead of prefixes like Cu(SO4)·5H2O
 
         examples
         --------

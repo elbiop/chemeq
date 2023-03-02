@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 <H3>PROJECT DESCRIPTION</H3>
 <p> 
 Package capable of balance chemical equations and contains<br>
