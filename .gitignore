@@ -2,9 +2,15 @@
 tests/__pycache__/
 chemeq/__pycache__/
 .pytest_cache/
+chemeq.egg-info/
+dist/
 
 
-# build directory files 
+# Documentation and sphynx files
+Makefile
+conf.py
+index.rst
+make.bat
 
 #compyled files
 *.pyc

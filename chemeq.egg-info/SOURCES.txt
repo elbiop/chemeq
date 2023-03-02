@@ -1,5 +1,5 @@
 LICENSE.txt
-README.txt
+README.md
 pyproject.toml
 chemeq/__init__.py
 chemeq/chemeq.py

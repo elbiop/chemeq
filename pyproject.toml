@@ -1,6 +1,6 @@
 # toml document
 [owner]
-name = "Elbio Peña"
+name = "Elbio Pena"
 dob = 2023-02-17T11:07:00
 
 [build-system]
@@ -11,8 +11,8 @@ build-backend = "setuptools.build_meta"
 name = 'chemeq'
 version = '0.1.1'
 description = '''Balance chemical equations, periodic table of elements'''
-readme = "README.md"
-authors = [ { name = "Elbio Peña", email="elbioemilio@outlook.es" } ]
+readme = "README.html"
+authors = [ { name = "Elbio Pena", email="elbioemilio@outlook.es" } ]
 requires-python = ">= 3.6"
 keywords = ["chemistry", "chemical", "chemicals", "equation",
             "equations", "balance", "balancer", "balancing", "reaction",

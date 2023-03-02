@@ -22,8 +22,8 @@ periodic_table.set_index('Z', inplace=True)
 
 
 class chemeq():
-    '''CLASS that receives as input a chemical equation in the form
-    of a string of the shape:
+    '''CLASS that receives a string representing a chemical equation of the
+    form:
     "reactant_1 + ... + reactant_n  = product_1 + ... + product_n"
 
     LIMITATIONS
@@ -56,9 +56,11 @@ class chemeq():
                            self.__prod__[self.__elem__].values)
 
     def __str__(self):
+        "String representation of equation"
         return self.__eq__
 
     def __repr__(self):
+        "Console representation of equation"
         if self.__balanced__:
             return f'<Balanced equation: "{self.__eq__}">'
         else:
@@ -107,7 +109,8 @@ class chemeq():
         return self.__prod__
 
     def __reformat_eq__(self):
-        # re assemble the equation with single spaces between items
+        '''reassemble the equation with single spaces between  and
+        symbols '''
         eq = ""
         for i, comp in enumerate(self.__react__['formula']):
             prefix = int(self.__react__['coefficient'][i])
