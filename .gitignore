@@ -1,9 +1,9 @@
 # cache directories
-tests/__pycache__/
-chemeq/__pycache__/
-.pytest_cache/
-chemeq.egg-info/
-dist/
+./tests/__pycache__/
+./chemeq/__pycache__/
+./.pytest_cache/
+./chemeq.egg-info/
+./dist/
 
 
 # Documentation and sphynx files
