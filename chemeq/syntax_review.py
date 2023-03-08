@@ -8,22 +8,48 @@ import re
 
 
 def syntax_review(equation, all_symbols):
-    '''Verify the syntax of equation and if it is correct, return
-    the reactants and products compounds and a list of the present elements'''
+    '''Verify the syntax of equation and if it is correct, returns
+    the reactants and products compounds and a list of the present elements
+    
+    :param equation: represents chemical equation
+    :type equation: str
+    
+    :param all_symbols: symbols for all chemical elements
+    :type all_symbols: list [ str]
+ 
+    :return: reactants formulas witout prefix (molar values),
+             products formulas witout prefix (molar values),
+             elements present in the chemical equation
+    :rtype: list[ str], list[str], list[str]
+    
+    :raises TypeError: if :param:'equation' is not str
+    :raises ValueError: if symbols other than chemical elelments are used
+                        eg. na is not a valid element but Na is.
+    :raises ValueError: if there is not an equal sign in equation.
+    :raises ValueError: if there are more than one equal sign.
+    :raises ValueError: if there are open parentheses within a compound.
+    :raises ValueError: if there are empty parentheses.
+    :raises ValueError: if two plus(+) signs are contiguous.
+    :raises ValueError: if one side of the equation is empty.
+    :raises ValueError: if there are diferent elements in the sides of equation
+    '''
 
     def get_elements(compound, all_symbols):
         '''returns a list with all elements present in a compound
 
-        parameter
-        ---------
-        compound : string representing a chemical compound
+        :param compound: chemical compound
+        :param type:  str
+        
+        :returns elements: lis of elements present in the compound
+        :rtype: list[str]
 
         examples
         --------
-        >>> get_elements("H2O")
-        ['H','O']
-        >>> get_elements("Cu(CO3)(OH)2")
-        ['C', 'Cu', 'H', 'O']'''
+        .. code block: python
+            >>> get_elements("H2O", all_symbols)
+            ['H','O']
+            >>> get_elements("Cu(CO3)(OH)2", all_symbols)
+            ['C', 'Cu', 'H', 'O']'''
 
         elements_in_comp = []
 
@@ -37,7 +63,7 @@ def syntax_review(equation, all_symbols):
         subgroups = [x.replace("(", "") for x in subgroups]
         for subgroup in subgroups:
             # find words beginning in uppercase followed by lowercase/numbers
-            # like O, Be, H20 and check  if they match an elements.
+            # like O, Be, H20 and check  if they match an element.
             pattern = re.compile("[A-Z]{1}[a-z]*[0-9]*|[a-z]+[0-9]*")
             matches = pattern.finditer(subgroup)
             for found in matches:
@@ -97,7 +123,6 @@ def syntax_review(equation, all_symbols):
         raise ValueError(text)
 
     for comp in (reac_formulas + prod_formulas):
-        # verify no empty parentheses are found
         if len(re.findall(r"(\(\))+", comp)):
             raise ValueError(f'Empty parentheses in "{comp}"')
 

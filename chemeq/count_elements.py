@@ -11,23 +11,29 @@ def count_elements(compound, elements):
     '''counts the number of appearances of a list of elements in a
      compound
 
-     parameters
-     ----------
-     compound  : string representing a chemical compound
-     elements  : list_like containing atomic symbols of chemical elements
-                 ordered alphabetically.
-
+     :param compound: Chemical compound.
+     :type compound: str
+     
+     :param elements: symbols for all chemical elements
+     :type elements: list[str]
+  
+     :return: compound without witout prefix (molar value),
+              prefix (molar value) or 1 if not present,
+              elements count per one molecule.
+     :rtype: str, int, list[int]
+     
      examples
      --------
-     >>> count_elements("H2O",['H','O'])
-     ('H2O', 1, [2, 1])
-     >>> count_elements("3Cu(CO3)(OH)2",['C', 'Cu', 'H', 'O'])
-     ('Cu(CO3)(OH)2', 3, [1, 1, 2, 5])
+     .. code block: python
+         >>> count_elements("H2O",['H','O'])
+         ('H2O', 1, [2, 1])
+         >>> count_elements("3Cu(CO3)(OH)2",['C', 'Cu', 'H', 'O'])
+         ('Cu(CO3)(OH)2', 3, [1, 1, 2, 5])
      '''
     original_comp = compound
     subindexes = [0 for _ in range(len(elements))]
     # find if a compound begins with a number
-    coeff = re.findall("^[0-9]+(?=[A-Z])", compound)
+    coeff = re.findall("^[0-9]+(?=[A-Z]|\()", compound)
     if len(coeff):
         trim = len(coeff[0])
         compound = compound[trim:]

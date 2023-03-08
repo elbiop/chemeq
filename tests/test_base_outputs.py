@@ -6,7 +6,7 @@ import sys
 import os
 
 os.chdir("..")
-ABS_PATH = os.getcwd() + os.sep + "source_code"
+ABS_PATH = os.getcwd() + os.sep + "chemeq"
 sys.path.insert(0, ABS_PATH)
 os.chdir(ABS_PATH)
 
