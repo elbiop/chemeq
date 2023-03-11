@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import numpy as np
 import pandas as pd
 from syntax_review import syntax_review
@@ -17,7 +18,8 @@ Python 3.10.6
 '''Source for the periodic table of elements:
 IUPAC - International Union of Pure and Applied Chemistry
 https://iupac.org/what-we-do/periodic-table-of-elements/'''
-periodic_table = pd.read_csv("periodic_table.csv")
+PATH = os.path.abspath(".") + os.sep
+periodic_table = pd.read_csv(f"{PATH}periodic_table.csv")
 periodic_table.set_index('Z', inplace=True)
 
 
