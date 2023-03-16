@@ -1,30 +1,19 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Feb  6 13:02:20 2023
-
-@author: User
-"""
 import re
 
 
 def count_elements(compound, elements):
-    '''counts the number of appearances of a list of elements in a
-     compound
+    '''counts the number of appearances of a list of elements in a compound
 
-     :param compound: Chemical compound.
-     :type compound: str
-     
-     :param elements: symbols for all chemical elements
-     :type elements: list[str]
-  
-     :return: compound without witout prefix (molar value),
+     param compound: type str. Chemical compound.
+     param elements: list[str], symbols for all chemical elements
+     return: compound without witout prefix (molar value),
               prefix (molar value) or 1 if not present,
               elements count per one molecule.
-     :rtype: str, int, list[int]
+     rtype: str, int, list[int]
      
      examples
      --------
-     .. code block: python
          >>> count_elements("H2O",['H','O'])
          ('H2O', 1, [2, 1])
          >>> count_elements("3Cu(CO3)(OH)2",['C', 'Cu', 'H', 'O'])

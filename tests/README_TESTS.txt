@@ -1,5 +1,5 @@
 "test_base_outputs.py"
-	test the outputs of every function under many sircunstances.
+	test the outputs of every function with diverse cases.
 "test_syntax.py"
 	verifies each posible sintax violation.
         to run both, just run "pytest" in the command prompt.

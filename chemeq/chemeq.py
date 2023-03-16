@@ -5,16 +5,6 @@ import pandas as pd
 from syntax_review import syntax_review
 from count_elements import count_elements
 
-"""
-Created on Fri Jan 21 07:15:03 2023
-Python 3.10.6
-
-@author:
-    Elbio Peña
-    elbioemilio@outlook.es
-    github.com/elbiop/chemeq
-"""
-
 '''Source for the periodic table of elements:
 IUPAC - International Union of Pure and Applied Chemistry
 https://iupac.org/what-we-do/periodic-table-of-elements/'''
@@ -58,11 +48,9 @@ class chemeq():
                            self.__prod__[self.__elem__].values)
 
     def __str__(self):
-        "String representation of equation"
         return self.__eq__
 
     def __repr__(self):
-        "Console representation of equation"
         if self.__balanced__:
             return f'<Balanced equation: "{self.__eq__}">'
         else:
@@ -70,16 +58,7 @@ class chemeq():
 
     @property
     def is_balanced(self):
-        '''Values are boolean: True or False
-
-        Example:
-        >>> eq = chemeq("C2H5(OH) + O2 = CO2 + H2O")
-        >>> eq.is_balanced
-        False
-        >>> eq = chemeq("C2H5(OH) + 3O2 = 2CO2 + 3H2O")
-        >>> eq.is_balanced
-        True'''
-
+        'Values are boolean: True or False'
         return self.__balanced__
 
     @property
@@ -134,7 +113,9 @@ class chemeq():
 
     def __extract__(self):
         '''Extract relevant information from equation such as reactant
-        compounds, product compounds and their respetive molecular mass'''
+        compounds, product compounds, Elements in each, the total quantity of
+        each element and the respetive molecular masses of reactants and
+        compounds'''
         all_symbols = periodic_table['symbol']
         reac, prod, elem = syntax_review(self.__eq__, all_symbols.values)
         self.__react__['formula'] = reac

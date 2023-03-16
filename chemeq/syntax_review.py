@@ -1,25 +1,16 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Feb  6 13:21:25 2023
-
-@author: User
-"""
 import re
 
 
 def syntax_review(equation, all_symbols):
-    '''Verify the syntax of equation and if it is correct, returns
+    '''Verify the chemical equation syntax and if it is correct, returns
     the reactants and products compounds and a list of the present elements
     
-    :param equation: represents chemical equation
-    :type equation: str
-    
-    :param all_symbols: symbols for all chemical elements
-    :type all_symbols: list [ str]
- 
-    :return: reactants formulas witout prefix (molar values),
-             products formulas witout prefix (molar values),
-             elements present in the chemical equation
+    equation: type str. represents chemical equation.
+    all_symbols: type list[str], symbols for all chemical elements.
+    return: type list[str], reactants formulas witout prefix (molar values),
+            type list[str]. Products formulas witout prefix (molar values),
+            type list[str]. Elements present in the chemical equation
     :rtype: list[ str], list[str], list[str]
     
     :raises TypeError: if :param:'equation' is not str
