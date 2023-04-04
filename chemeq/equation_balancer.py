@@ -1,21 +1,28 @@
-# -*- coding: utf-8 -*-
 import os
 import sys
 import numpy as np
 import pandas as pd
+from importlib import util
 
-PATH = os.path.abspath(".") + os.sep
-sys.path.append(PATH)
+installed = util.find_spec("chemeq")
+if installed is None:
+    PATH = os.path.abs_path("..")
+else:
+    PATH = installed.origin[:-11]
+
+sys.path.insert(0, PATH)
+os.chdir(PATH)
 
 from syntax_review import syntax_review
 from count_elements import count_elements
 
-'''Source for the periodic table of elements:
-IUPAC - International Union of Pure and Applied Chemistry
-https://iupac.org/what-we-do/periodic-table-of-elements/'''
-
-periodic_table = pd.read_csv(f"{PATH}periodic_table.csv")
-periodic_table.set_index('Z', inplace=True)
+periodic_table = pd.read_csv(f"{PATH}periodic_table.csv", header=3, sep=",",
+                             encoding='utf-8', dtype={
+                                         "z": int, "name": str,
+                                         "symbol": str, "atomic_mass": float,
+                                         "error": float, "group": int,
+                                         "period": float, "state": str})
+periodic_table.set_index('z', inplace=True)
 
 
 class chemeq():

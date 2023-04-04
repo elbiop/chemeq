@@ -1,4 +1,8 @@
-Z,name,symbol,atomic_mass,error,group,period,state
+Source for the periodic table of elements:
+IUPAC - International Union of Pure and Applied Chemistry
+https://iupac.org/what-we-do/periodic-table-of-elements/
+
+z,name,symbol,atomic_mass,error,group,period,state
 1,Hydrogen,H,1.008,0.0002,1,1,g
 2,Helium,He,4.0026,0.0001,18,1,g
 3,Lithium,Li,6.94,0.06,1,2,s

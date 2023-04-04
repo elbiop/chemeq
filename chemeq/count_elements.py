@@ -1,6 +1,5 @@
 import re
 
-
 def count_elements(compound, elements):
     '''counts the number of appearances of a list of elements in a compound
 
@@ -10,7 +9,7 @@ def count_elements(compound, elements):
               prefix (molar value) or 1 if not present,
               elements count per one molecule.
      rtype: str, int, list[int]
-     
+
      examples
      --------
          >>> count_elements("H2O",['H','O'])
@@ -21,7 +20,7 @@ def count_elements(compound, elements):
     original_comp = compound
     subindexes = [0 for _ in range(len(elements))]
     # find if a compound begins with a number
-    coeff = re.findall("^[0-9]+(?=[A-Z]|\()", compound)
+    coeff = re.findall(r"^[0-9]+(?=[A-Z]|\()", compound)
     if len(coeff):
         trim = len(coeff[0])
         compound = compound[trim:]
