@@ -4,10 +4,10 @@ Package capable of balance chemical equations and contains<br>
 the most used portion of the periodic table of elements.<br>
 The package has two objects: <b>equation</b> and <b>periodic_table</b><br>
 <br>
-<b>1. equation</b><br>
+<b>1. chemeq</b><br>
 &emsp;CLASS, Receives a string representing a chemical equation  as input.<br> &emsp;In the shape:<br>
 &emsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
-&emsp;The equation CLASS has three properties and one method.<br>
+&emsp;The <b>chemeq CLASS</b> has three properties and one method.<br>
 &emsp;&emsp;&emsp;      <b>is_balanced</b><br>
 &emsp;&emsp;&emsp;&emsp;&emsp;     Property. Boolean (True or False)<br>
 &emsp;&emsp;&emsp;      <b>reactants</b><br>

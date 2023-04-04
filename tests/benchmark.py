@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import time
 import sys
 import os
@@ -30,7 +29,7 @@ def main():
             else:
                 fails += 1
                 header = "\n\n!!!!!!!!!!!!!!   Failed   !!!!!!!!!!!!!!"
-            print(header + f'\nOriginal: {text}\nResult   {str(eq)}\n')
+            print(header + f'\nOriginal: {text}\n  Result: {str(eq)}\n')
             
         except Exception as error:
             print(error)

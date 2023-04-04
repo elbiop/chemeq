@@ -1,14 +1,18 @@
-# -*- coding: utf-8 -*-
 import os
+import sys
 import numpy as np
 import pandas as pd
+
+PATH = os.path.abspath(".") + os.sep
+sys.path.insert(0,PATH)
+
 from syntax_review import syntax_review
 from count_elements import count_elements
+
 
 '''Source for the periodic table of elements:
 IUPAC - International Union of Pure and Applied Chemistry
 https://iupac.org/what-we-do/periodic-table-of-elements/'''
-PATH = os.path.abspath(".") + os.sep
 periodic_table = pd.read_csv(f"{PATH}periodic_table.csv")
 periodic_table.set_index('Z', inplace=True)
 
