@@ -1,0 +1,11 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+chemeq/__init__.py
+chemeq/count_elements.py
+chemeq/equation_balancer.py
+chemeq/syntax_review.py
+chemeq.egg-info/PKG-INFO
+chemeq.egg-info/SOURCES.txt
+chemeq.egg-info/dependency_links.txt
+chemeq.egg-info/top_level.txt

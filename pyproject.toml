@@ -1,18 +1,25 @@
 # toml document
 [owner]
-name = "Elbio Peña"
+name = "Elbio Pena"
 dob = 2023-02-17T11:07:00
 
+# windows setuptools setup
 [build-system]
-requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+requires =["setuptools>=67.0.0"]
 
+# to include data files along with MANIFEST.in
+# keeps giving error: package directory 'C:Users\User\Desktop\Python\
+#              Projects\chemeq-master\chemeq' does not exist
+# decided to generate periodic_table.csv file from __init__.py
+
+# The python project settings
 [project]
 name = 'chemeq'
 version = '0.1.1'
 description = '''Balance chemical equations, periodic table of elements'''
-readme = "README.md"
-authors = [ { name = "Elbio Peña", email="elbioemilio@outlook.es" } ]
+readme = "README.rst"
+authors = [ { name = "Elbio Pena", email="elbioemilio@outlook.es" } ]
 requires-python = ">= 3.6"
 keywords = ["chemistry", "chemical", "chemicals", "equation",
             "equations", "balance", "balancer", "balancing", "reaction",
@@ -25,3 +32,5 @@ classifiers = ["Development Status :: 5 - Production/Stable",
 
 [project.urls]
 repository = "https://github.com/elbiop/chemeq"
+
+
