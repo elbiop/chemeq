@@ -1,26 +1,23 @@
-### PROJECT DESCRIPTION  
+## PROJECT DESCRIPTION  
 
-Package capable of balance chemical equations and contains   
-the most used portion of the periodic table of elements.   
-The package has two objects: **equation** and **periodic_table**
+Package capable of balance chemical equations and containsthe most used portion of the periodic table of elements.   
+The package has two objects: **chemeq** and **periodic_table**
 
-**1. chemeq**  
-       CLASS, Receives a string representing a chemical equation  as input.  
-> In the shape:  
-&emsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
-&emsp;The <b>chemeq CLASS</b> has three properties and one method.<br>
-&emsp;&emsp;&emsp;      <b>is_balanced</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Property. Boolean (True or False)<br>
-&emsp;&emsp;&emsp;      <b>reactants</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Property. pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     of the reactants (left side) compounds, molecular weights and elements.<br>
-&emsp;&emsp;&emsp;      <b>products</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Property. pandas.DtataFrame where each row represents one<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     of the product (right side) compounds, molecular weights and elements.<br>
-&emsp;&emsp;&emsp;      <b>balance()</b><br>
-&emsp;&emsp;&emsp;&emsp;&emsp;     Method. Balances the equation if it is unbalanced.<br>
+## 1. chemeq
+&emsp; CLASS, Receives a string representing a chemical equation  as input.  
+&emsp; In the shape: "reactant_1 + ... + reactant_n  = product_1 + ... + product_n".    
 
-<b> 2. periodic_table</b><br>
+&emsp; The **chemeq CLASS** has three properties and one method.  
+
+&emsp;&emsp;      **is_balanced** : Property. Boolean (True or False)  
+&emsp;&emsp;      **reactants** &emsp;: Property. pandas.DtataFrame where each row represents one of the reactants (left side) compounds,  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; molecular weights and elements.   
+&emsp;&emsp;      **products** &emsp; : Property. pandas.DtataFrame where each row represents one of the product (right side) compounds,  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; molecular weights and elements.   
+&emsp;&emsp;      **balance()** &emsp; : Method. Balances the equation if it is unbalanced.  
+
+
+## 2. periodic_table
 &emsp;     pandas.DataFrame containing a portion of the periodic table of elements<br>
 &emsp;     contains: Z, name, symbol, atomic mass, atomic mass error, period,<br>
 &emsp;     group & state.<br>
