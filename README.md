@@ -3,7 +3,7 @@
 Package capable of balance chemical equations and containsthe most used portion of the periodic table of elements.   
 The package has two objects: **chemeq** and **periodic_table**
 
-## 1. chemeq
+### 1. chemeq
 &emsp; CLASS, Receives a string representing a chemical equation  as input.  
 &emsp; In the shape: "reactant_1 + ... + reactant_n  = product_1 + ... + product_n".    
 
@@ -17,37 +17,41 @@ The package has two objects: **chemeq** and **periodic_table**
 &emsp;&emsp;      **balance()** &emsp; : Method. Balances the equation if it is unbalanced.  
 
 
-## 2. periodic_table
-&emsp;     pandas.DataFrame containing a portion of the periodic table of elements<br>
-&emsp;     contains: Z, name, symbol, atomic mass, atomic mass error, period,<br>
-&emsp;     group & state.<br>
-&emsp;     Source for the periodic table of elements:<br>
-&emsp;     IUPAC - International Union of Pure and Applied Chemistry<br>
-&emsp;     https://iupac.org/what-we-do/periodic-table-of-elements/<br>
+### 2. periodic_table
+&emsp;  pandas.DataFrame containing a portion of the periodic table of elements contains: Z, name, symbol, atomic mass,  
+&emsp;  atomic mass error, period, group & state.  
 
-<H3>LIMITATIONS</H3>
-<ol><li>Does not include Rare earths, synthetic elements, Rn, Fr & Ra.</li>
-<li> Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O<br>
-must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
+&emsp;     Source for the periodic table of elements:   
+&emsp;     IUPAC - International Union of Pure and Applied Chemistry   
+&emsp;     https://iupac.org/what-we-do/periodic-table-of-elements/   
 
-<H3>EXAMPLES</H3>
-<pre>
+## LIMITATIONS
+- Does not include Rare earths, synthetic elements, Radon, Francium & Radium.  
+- Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O    
+&emsp; must be represented with subindexes like Cu(SO4)(H2O)5.
+
+## EXAMPLES
+```
   >>> from chemeq import chemeq
   >>> eq = chemeq("C2H5(OH) + O2 = CO2 + H2O")
   >>> eq.is_balanced
   False
-</pre>
-  The balance status of the equation is also visible in
-  the equation object itself.
-<pre>  >>> eq
-  &#60;Unbalanced equation: "C2H5(OH) + O2 = CO2 + H2O"&#62;</pre>
-
+```  
+  The balance status of the equation is also visible in the equation object itself.
+```
+  >>> eq
+  <Unbalanced equation: "C2H5(OH) + O2 = CO2 + H2O">
+```
   To balance the equation invoke the balance() method
-<pre>  >>> eq.balance()
+```
+>>> eq.balance()
   >>> eq.is_balanced
   True
   >>> eq
-  &#60;Balanced equation: "C2H5(OH) + 3O2 = 2CO2 + 3H2O"&#62;
+  <Balanced equation: "C2H5(OH) + 3O2 = 2CO2 + 3H2O">
+```
+Example of its properties
+```
   >>> str(eq)
   "C2H5(OH) + 3O2 = 2CO2 + 3H2O"
   >>> eq.reactants
@@ -58,11 +62,11 @@ must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
      coefficient formula  C  H  O  Mass(g/mol)
   0            2     CO2  1  0  2       44.009
   1            3     H2O  0  2  1       18.015</pre>
-  
+```
 
-  An equation can be created with their indexes to test<br>
-  if it is balanced. If it is not it can be balanced later.
-<pre>  >>> eq = chemeq("CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O")
+  An equation can be created with their indexes to test if it is balanced. If it is not it can be balanced later.
+```
+>>> eq = chemeq("CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O")
   >>> eq.is_balanced
   True
   >>> eq = chemeq("73CuS + 73HNO3 = 11CuSO4 + 11NO2 + 11H2O")
@@ -70,8 +74,9 @@ must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
   False
   >>> eq.balance()
   >>> eq
-  &#60;Balanced equation: "CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O"&#62;
-
+<Balanced equation: "CuS + 8HNO3 = CuSO4 + 8NO2 + 4H2O">
+```
+```
   >>> from chemeq import periodic_table
   >>> periodic_table
                       name symbol  atomic_weight   error  group  period state
@@ -88,4 +93,4 @@ must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
   82                  Lead     Pb       207.2000  1.1000     14       6     s
   83               Bismuth     Bi       208.9800  0.0100     15       6     s
   [67 rows x 7 columns]
-</pre>
+```
