@@ -1,11 +1,12 @@
-<H3>PROJECT DESCRIPTION</H3>
-<p> 
-Package capable of balance chemical equations and contains<br>
-the most used portion of the periodic table of elements.<br>
-The package has two objects: <b>equation</b> and <b>periodic_table</b><br>
-<br>
-<b>1. chemeq</b><br>
-&emsp;CLASS, Receives a string representing a chemical equation  as input.<br> &emsp;In the shape:<br>
+### PROJECT DESCRIPTION  
+
+Package capable of balance chemical equations and contains   
+the most used portion of the periodic table of elements.   
+The package has two objects: **equation** and **periodic_table**
+
+**1. chemeq**  
+       CLASS, Receives a string representing a chemical equation  as input.  
+> In the shape:  
 &emsp;"reactant_1 + ... + reactant_n  = product_1 + ... + product_n"<br>
 &emsp;The <b>chemeq CLASS</b> has three properties and one method.<br>
 &emsp;&emsp;&emsp;      <b>is_balanced</b><br>
@@ -29,7 +30,7 @@ The package has two objects: <b>equation</b> and <b>periodic_table</b><br>
 
 <H3>LIMITATIONS</H3>
 <ol><li>Does not include Rare earths, synthetic elements, Rn, Fr & Ra.</li>
-<li> Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O<br>
+<li> Intermediate prefixes like those from hydrates such as Cu(SO4)â€¢5H2O<br>
 must be represented with subindexes like Cu(SO4)(H2O)5.</li></ol>
 
 <H3>EXAMPLES</H3>
