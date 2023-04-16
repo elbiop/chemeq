@@ -1,3 +1,7 @@
+## USE
+```
+pip install chemeq
+```
 ## PROJECT DESCRIPTION  
 
 Package capable of balance chemical equations and containsthe most used portion of the periodic table of elements.   
