@@ -1,16 +1,19 @@
 import os
-import sys
 import re
 import pandas as pd
 from importlib import util
 
+CURRENT_PATH = os.path.abspath(".")
 
-PATH = os.path.abspath("..") + os.sep + "chemeq"
-
-sys.path.insert(0, PATH)
-os.chdir(PATH)
+# if package is installed change to installation directory
+installed = util.find_spec("chemeq")
+if installed.has_location:
+    INSTALLATION_PATH = installed.submodule_search_locations[0] + os.sep
+    os.chdir(INSTALLATION_PATH)
 
 periodic_table = pd.read_csv("periodic_table.csv", header=3)
+os.chdir(CURRENT_PATH)
+
 
 def syntax_review(equation):
     '''Verify the chemical equation syntax and if it is correct, returns

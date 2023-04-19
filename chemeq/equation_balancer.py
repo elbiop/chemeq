@@ -2,20 +2,26 @@ import os
 import sys
 import numpy as np
 import pandas as pd
+from importlib import util
 
-# installed = util.find_spec("chemeq")
-# if installed.has_location:
-    # PATH = installed.origin[:-11]
-# else:
-PATH = os.path.abspath(".")
+CURRENT_PATH = os.path.abspath(".")
+installed = util.find_spec("chemeq")
 
-sys.path.insert(0, PATH)
-os.chdir(PATH)
+# Different imports if package is installed or in source directory
+if installed.has_location:
+    # if installed run installed version
+    INSTALLATION_PATH = installed.submodule_search_locations[0] + os.sep
+    os.chdir(INSTALLATION_PATH)
+else:
+    # if not installed run from source location
+    sys.path.insert(0, CURRENT_PATH)
 
-from chemeq.syntax_review import syntax_review
-from chemeq.count_elements import count_elements
+from syntax_review import syntax_review
+from count_elements import count_elements
+os.chdir(CURRENT_PATH)
 
 periodic_table = pd.read_csv("periodic_table.csv", header=3)
+
 
 class chemeq():
     '''CLASS that receives a string representing a chemical equation of the

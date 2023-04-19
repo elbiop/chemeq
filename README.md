@@ -2,45 +2,44 @@
 ```
 pip install chemeq
 ```
-## PROJECT DESCRIPTION  
+## PROJECT DESCRIPTION   
+Package capable of balance chemical equations and contains the most used portion  of the periodic table of elements.    
+The package has two objects: **chemeq** and **periodic_table**.   
 
-Package capable of balance chemical equations and containsthe most used portion of the periodic table of elements.   
-The package has two objects: **chemeq** and **periodic_table**
+### 1. chemeq   
+&emsp; CLASS, Receives a string representing a chemical equation  as input.   
+&emsp; In the shape: "reactant_1 + ... + reactant_n  = product_1 + ... + product_n".   
 
-### 1. chemeq
-&emsp; CLASS, Receives a string representing a chemical equation  as input.  
-&emsp; In the shape: "reactant_1 + ... + reactant_n  = product_1 + ... + product_n".    
+&emsp; The **chemeq CLASS** has three properties and one method.   
 
-&emsp; The **chemeq CLASS** has three properties and one method.  
-
-&emsp;&emsp;      **is_balanced** : Property. Boolean (True or False)  
-&emsp;&emsp;      **reactants** &emsp;: Property. pandas.DtataFrame where each row represents one of the reactants (left side) compounds,  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; molecular weights and elements.   
-&emsp;&emsp;      **products** &emsp; : Property. pandas.DtataFrame where each row represents one of the product (right side) compounds,  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; molecular weights and elements.   
-&emsp;&emsp;      **balance()** &emsp; : Method. Balances the equation if it is unbalanced.  
+&emsp;&emsp;      **is_balanced** : Property. Boolean (True or False)   
+&emsp;&emsp;      **reactants** &emsp;: Property. pandas.DtataFrame where each row represents one of the reactants (left side)   
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   compounds,  molecular weights and elements.   
+&emsp;&emsp;      **products** &emsp; : Property. pandas.DtataFrame where each row represents one of the product (right side)   
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   compounds, molecular weights and elements.   
+&emsp;&emsp;      **balance()** &emsp; : Method. Balances the equation if it is unbalanced.   
 
 
-### 2. periodic_table
-&emsp;  pandas.DataFrame containing a portion of the periodic table of elements contains: Z, name, symbol, atomic mass,  
-&emsp;  atomic mass error, period, group & state.  
+### 2. periodic_table   
+&emsp;  pandas.DataFrame containing a portion of the periodic table of elements contains: Z, name, symbol, atomic mass,   
+&emsp;  atomic mass error, period, group & state.   
 
 &emsp;     Source for the periodic table of elements:   
 &emsp;     IUPAC - International Union of Pure and Applied Chemistry   
 &emsp;     https://iupac.org/what-we-do/periodic-table-of-elements/   
 
-## LIMITATIONS
-- Does not include Rare earths, synthetic elements, Radon, Francium & Radium.  
-- Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O    
-&emsp; must be represented with subindexes like Cu(SO4)(H2O)5.
+## LIMITATIONS   
+- Does not include Rare earths, synthetic elements, Radon, Francium & Radium.   
+- Intermediate prefixes like those from hydrates such as Cu(SO4)•5H2O   
+&emsp; must be represented with subindexes like Cu(SO4)(H2O)5.   
 
-## EXAMPLES
+## EXAMPLES   
 ```
   >>> from chemeq import chemeq
   >>> eq = chemeq("C2H5(OH) + O2 = CO2 + H2O")
   >>> eq.is_balanced
   False
-```  
+```
   The balance status of the equation is also visible in the equation object itself.
 ```
   >>> eq

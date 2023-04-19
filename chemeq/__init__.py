@@ -1,8 +1,7 @@
 # create periodic table file
-from importlib import util
 import os
-import pandas as pd
-
+import sys
+from importlib import util
 
 PERIODIC_TABLE_CONTENT = """Source for the periodic table of elements:
 IUPAC - International Union of Pure and Applied Chemistry
@@ -78,22 +77,37 @@ z,name,symbol,atomic_mass,error,group,period,state
 83,Bismuth,Bi,208.98,0.01,15,6,s"""
 
 
+CURRENT_PATH = os.path.abspath(".")
 installed = util.find_spec("chemeq")
+
+# Different imports if package is installed or in source directory
 if installed.has_location:
-    CURRENT_PATH = os.path.abspath(".")
-    INSTALLATION_PATH = installed.origin[:-11]
+    # if installed run installed version
+    INSTALLATION_PATH = installed.submodule_search_locations[0] + os.sep
     os.chdir(INSTALLATION_PATH)
     if "periodic_table.csv" not in os.listdir():
         with open('periodic_table.csv', 'w') as pt:
             pt.write(PERIODIC_TABLE_CONTENT)
+
+    # shorten import paths
+    from chemeq.equation_balancer import chemeq
+    from chemeq.equation_balancer import periodic_table
+    from chemeq.syntax_review import syntax_review
+    from chemeq.count_elements import count_elements
     os.chdir(CURRENT_PATH)
+else:
+    # if not installed run from source location
+    sys.path.insert(0, CURRENT_PATH)
+    from equation_balancer import chemeq
+    from equation_balancer import periodic_table
+    from syntax_review import syntax_review
+    from count_elements import count_elements
 
 
-# shorten import paths
-from chemeq.equation_balancer import chemeq
-from chemeq.equation_balancer import periodic_table
-
-
-__all__ = ["chemeq",
-           "periodic_table"]
-__author__: "Elbio Pena Almonte"
+__all__ = [
+            "chemeq",
+            "periodic_table",
+            "count_elements",
+            "syntax_review"
+          ]
+__author__ = "Elbio Peña Almonte"
